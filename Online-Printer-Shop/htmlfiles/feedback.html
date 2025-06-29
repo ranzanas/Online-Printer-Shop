@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="feedback-form" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+
+    <link rel="stylesheet" href="../cssFile/style.css" />
+    <title>Feedback Form</title>
+
+    <style>
+      /* Text input fields and textarea */
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+        color: #a38154;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-family: monospace;
+        margin-top: 5px;
+      }
+
+      /* Form labels */
+      label {
+        font-family: monospace;
+        font-size: 20px;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navigation bar starts-->
+    <nav id="nav">
+      <!--The upper part of the navigation bar includes logo, search bar and limited offer title.-->
+      <div class="navTop">
+        <!--Division for logo-->
+        <div class="navItem">
+          <img src="../Images/l1.png" alt="" class="logo" />
+        </div>
+
+        <!--Division for search bar-->
+        <div class="navItem">
+          <div class="search">
+            <input type="text" placeholder="Search..." class="searchInput" />
+            <img
+              src="../Images/search.png"
+              width="20"
+              height="20"
+              alt=""
+              class="searchIcon"
+            />
+          </div>
+        </div>
+
+        <!--Division for limited offer title-->
+        <div class="navItem">
+          <span class="limitedOffer">Limited Offer!</span>
+        </div>
+      </div>
+
+      <!--The bottom part contains the menu items where user can navigate to other pages of website-->
+      <div class="navBottom">
+        <h3 class="menuItem"><a href="index.html" class="navLink">HOME</a></h3>
+        <h3 class="menuItem">
+          <a href="product.html" class="navLink">PRODUCTS</a>
+        </h3>
+        <h3 class="menuItem">
+          <a href="Research.html" class="navLink">RESEARCH</a>
+        </h3>
+        <h3 class="menuItem">
+          <a href="aboutUs.html" class="navLink">ABOUT US</a>
+        </h3>
+        <h3 class="menuItem"><a href="blog.html" class="navLink">BLOG</a></h3>
+      </div>
+    </nav>
+    <!--Navigatin Bar Ends -->
+
+    <!--FEEDBACK FORM-->
+    <!-- Main heading for the form -->
+    <h1
+      style="
+        font-family: sans-serif;
+        font-size: 45px;
+        text-align: center;
+        margin-top: 20px;
+      "
+    >
+      Let us hear from you!
+    </h1>
+
+    <!-- Subheading indicating that all fields are mandatory -->
+    <h4 style="font-size: 16px; text-align: center; color: gray">
+      All fields are mandatory.
+    </h4>
+
+    <!-- Form container -->
+    <div class="form">
+      <!-- Form element with a name attribute and onsubmit event handler -->
+      <form name="myForm" onsubmit="validateForm()">
+        <!-- First Name input field -->
+        <label for="firstName">First Name:</label><br />
+        <input type="text" maxlength="50" name="firstName" /><br /><br />
+
+        <!-- Last Name input field -->
+        <label for="lastName">Last Name:</label><br />
+        <input type="text" maxlength="50" name="lastName" /><br /><br />
+
+        <!-- Gender radio buttons -->
+        <label for="gender">Gender:</label><br />
+
+        <!-- Male option -->
+        <input type="radio" name="gender" checked />
+        <label for="male">Male</label>&emsp13;&emsp13;&emsp13;&emsp13;
+
+        <!-- Female option -->
+        <input type="radio" name="gender" />
+        <label for="female">Female</label><br /><br />
+
+        <!-- Address input field -->
+        <label for="address">Address:</label><br />
+        <input type="text" maxlength="50" name="address" /><br /><br />
+
+        <!-- Contact Number input field -->
+        <label for="phone">Contact Number:</label><br />
+        <input type="text" maxlength="10" name="phone" /><br /><br />
+
+        <!-- E-mail input field -->
+        <label for="emails">E-mail:</label><br />
+        <input type="email" maxlength="50" name="emails" /><br /><br />
+
+        <!-- Feedback textarea -->
+        <label for="textarea">Feedback:</label><br />
+        <textarea name="feedback" style="height: 150px"></textarea><br /><br />
+
+        <!-- Submit button -->
+        <input class="btn" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <footer>
+      <!-- Left section of the footer with multiple menus -->
+      <div class="footerLeft">
+        <!-- Menu for About Us section -->
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">About Us</h1>
+          <ul class="fList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <!-- Menu for Useful Links section -->
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Useful Links</h1>
+          <ul class="fList">
+            <li class="fListItem">Support</li>
+            <li class="fListItem">Refund</li>
+            <li class="fListItem">FAQ</li>
+            <li class="fListItem">Feedback</li>
+            <li class="fListItem">Stories</li>
+          </ul>
+        </div>
+        <!-- Menu for Products section -->
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Products</h1>
+          <ul class="fList">
+            <li class="fListItem">Home</li>
+            <li class="fListItem">Products</li>
+            <li class="fListItem">Research</li>
+            <li class="fListItem">Blog</li>
+            <li class="fListItem">Sale</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right section of the footer -->
+      <div class="footerRight">
+        <!-- Newsletter subscription section -->
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+          <div class="fMail">
+            <input type="text" placeholder="your@email.com" class="fInput" />
+            <button class="fButton">Join!</button>
+          </div>
+        </div>
+        <!-- Social media follow section -->
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Follow Us</h1>
+          <div class="fIcons">
+            <img src="../Images/facebook.png" alt="Facebook" class="fIcon" />
+            <img src="../Images/twitter.png" alt="Twitter" class="fIcon" />
+            <img src="../Images/instagram.png" alt="Instagram" class="fIcon" />
+            <img src="../Images/whatsapp.png" alt="WhatsApp" class="fIcon" />
+          </div>
+        </div>
+        <!-- Link to feedback form -->
+        <a href="feedback.html" class="fButtonfeedback">Feedback Form!</a>
+        <!-- Copyright section -->
+        <div class="footerRightMenu">
+          <span class="copyright">@Print. All rights reserved. 2022.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function validateForm() {
+        // Get the form values
+        var fname = document.forms["myForm"]["firstName"].value;
+        var lname = document.forms["myForm"]["lastName"].value;
+        var address = document.forms["myForm"]["address"].value;
+        var phone = document.forms["myForm"]["phone"].value;
+        var email = document.forms["myForm"]["emails"].value;
+        var textarea = document.forms["myForm"]["feedback"].value;
+
+        // Check if any required field is empty
+        if (
+          fname == "" ||
+          lname == "" ||
+          address == "" ||
+          email == "" ||
+          textarea == ""
+        ) {
+          alert("Please fill up every field");
+        }
+        // Check if the phone number is incomplete or empty
+        else if (phone.length < 10 || phone == "") {
+          alert("Phone Number is incomplete");
+        }
+        // If all checks pass, show a thank you message
+        else {
+          alert("Thank you for your feedback");
+        }
+      }
+    </script>
+  </body>
+</html>

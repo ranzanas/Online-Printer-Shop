@@ -1,0 +1,753 @@
+/* Resetting margin and padding for all elements and setting box-sizing to border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Enabling smooth scroll behavior for the entire HTML document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styling for the navigation bar */
+nav {
+  background-color: #111;
+  padding: 20px 50px;
+  color: white;
+}
+
+/* Styling for the logo */
+.logo {
+  max-width: 150px;
+  /* Set your desired max width */
+  height: 120;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove any default inline spacing */
+  margin: 0 auto;
+  /* Center the logo horizontally if needed */
+}
+
+/* Styling for the top part of the navigation bar */
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for the search bar */
+.search {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Styling for the search input field */
+.searchInput {
+  border: none;
+  background-color: transparent;
+}
+
+/* Styling for the placeholder text in the search input field */
+.searchInput::placeholder {
+  color: lightgray;
+}
+
+/* Styling for the limited offer text */
+.limitedOffer {
+  font-size: 20px;
+  border-bottom: 2px solid green;
+  cursor: pointer;
+}
+
+/* Styling for the bottom part of the navigation bar */
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the navigation links */
+.navLink {
+  color: inherit;
+  /* Inherit the color from the parent (default color) */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+/* Styling for the navigation links on hover */
+.navLink:hover {
+  color: green;
+}
+
+/* Styling for the menu items */
+.menuItem {
+  margin-right: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 400;
+}
+
+/* Styling for the outer box of the landing page */
+.landPageOuterBox {
+  background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+}
+
+/* Styling for the inner box of the landing page */
+.landPageInnerBox {
+  display: flex;
+  width: 100%;
+}
+
+/* Styling for the items inside the landing page */
+.landPageItems {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+}
+
+/* Styling for the background overlay on the landing page */
+.landPageBg {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #369e62;
+}
+
+/* Styling for the image on the landing page */
+.landPageImg {
+  z-index: 1;
+}
+
+/* Styling for the title on the landing page */
+.landPageTitle {
+  position: absolute;
+  top: -11%;
+  right: 7%;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+/* Styling for the price on the landing page */
+.landPagePrice {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  color: #369e62;
+  border: 1px solid gray;
+  z-index: 1;
+}
+
+/* Styling for the "Buy Now" button on the landing page */
+.buyButton {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  border: 1px solid gray;
+  background-color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Styling for the "Buy Now" button on hover */
+.buyButton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Styling for the outer container of the features section */
+.featuresOuterBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+/* Styling for each individual feature */
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styling for the feature icons */
+.featureIcon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Styling for the feature titles */
+.featureTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+/* Styling for the feature descriptions */
+.featureDesc {
+  color: gray;
+  width: 50%;
+  height: 100px;
+}
+
+/* Styling for the product section */
+.productSection {
+  height: 650px;
+  background-color: whitesmoke;
+  position: relative;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Styling for the outer container of the product section */
+.productOuterCont {
+  margin: 0px 20px 0px 20px;
+  padding: 70px 20px;
+}
+
+/* Styling for the product section title */
+.productTitle {
+  font-size: 55px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* Styling for the inner container holding product boxes */
+.inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px 120px;
+  width: 100%;
+}
+
+/* Styling for each product box */
+.productBoxes {
+  width: 25%;
+  height: 250px;
+  margin: 0px 20px;
+}
+
+/* Styling for the images in the product boxes */
+.productBoxes img {
+  object-fit: cover;
+  /* Cover the container while maintaining aspect ratio */
+  width: 100%;
+  height: 250px;
+}
+
+/* Styling for the product descriptions */
+.productDesc {
+  font-style: 24px;
+  color: gray;
+}
+
+/* Styling for the "View More" button */
+.producteButton {
+  margin-top: 18%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Styling for the "View More" button on hover */
+.producteButton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Outer container for the blog section */
+.blogOuterCont {
+  margin: 50px 20px 0px 20px;
+  padding: 0px 20px;
+}
+
+/* Container for the blog image */
+.imageBox {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  /* Ensure rounded corners and box shadow are visible */
+}
+
+/* Container for the blog text */
+.paragraphBox {
+  width: 500px;
+  color: white;
+  background-color: #111;
+  height: auto;
+  padding: 10px 15px;
+  font-size: 18px;
+  height: 30%;
+  box-shadow: 10px 10px 5px #817c79;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Styling for the blog title */
+.blogTitle {
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* Styling for the blog image */
+.blogImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Add rounded corners to the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow for a lifted look */
+}
+
+/* Styling for the profile box containing each team member's image and name */
+.profileBox {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+/* Styling for the images inside the profile box */
+.profileBox img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Styling for the footer container */
+footer {
+  display: flex;
+}
+
+/* Styling for the left section of the footer */
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+/* Styling for the menu titles in the footer */
+.fMenuTitle {
+  font-size: 16px;
+}
+
+/* Styling for the list in the footer */
+.fList {
+  padding: 0;
+  list-style: none;
+}
+
+/* Styling for the list items in the footer */
+.fListItem {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+/* Styling for the right section of the footer */
+.footerRight {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Styling for the input fields in the footer */
+.fInput {
+  padding: 5px;
+}
+
+/* Styling for the buttons in the footer */
+.fButton {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+/* Styling for the feedback button in the footer */
+.fButtonfeedback {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Styling for the icon container in the footer */
+.fIcons {
+  display: flex;
+}
+
+/* Styling for individual icons in the footer */
+.fIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Styling for the copyright text in the footer */
+.copyright {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/**********************STYLE FOR PRODUCT PAGE**********************/
+
+/* Styles for the main product section */
+.productMainSection {
+  height: 650px;
+  background-color: whitesmoke;
+  position: relative;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  /* Diagonal clipping for a dynamic look */
+}
+
+/* Styles for the product details section */
+.productDetails {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 40%;
+  padding: 50px;
+  /* Spacing around the content */
+}
+
+/* Flex container for color and size options */
+.colors,
+.sizes {
+  display: flex;
+  margin-bottom: 20px;
+  /* Spacing below each section */
+}
+
+/* Individual color option */
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: black;
+  margin-right: 10px;
+  /* Spacing between color options */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+}
+
+/* Specific style for the last color option */
+.color:last-child {
+  background-color: gray;
+}
+
+/* Individual size option */
+.size {
+  padding: 5px 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+  /* Spacing between size options */
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Styles for the purchase button */
+.productButton {
+  float: right;
+  /* Align to the right */
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  /* Pointer cursor on hover */
+}
+
+/* Hover effect for the purchase button */
+.productButton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Styles for the product image */
+.productImg {
+  width: 50%;
+  margin-top: 180px;
+  /* Top margin for positioning */
+  margin-left: 50px;
+  /* Left margin for positioning */
+}
+
+/* Main wrapper for flex layout and alignment */
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 0%;
+  padding-top: 0%;
+  align-items: center;
+  font-family: Montserrat;
+  background: whitesmoke;
+  width: 100%;
+  height: 70vh;
+}
+
+/* Styles for each product container */
+.exclusive-section .outer {
+  position: relative;
+  background: white;
+  height: 350px;
+  width: 30%;
+  margin: 0%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+}
+
+/* Styles for product images */
+.exclusive-section img {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  z-index: 0;
+  animation-delay: 0.5s;
+}
+
+/* Styles for product content */
+.exclusive-section .content {
+  animation-delay: 0.3s;
+  position: absolute;
+  left: 20px;
+  z-index: 3;
+}
+
+/* Styles for new season section */
+.newSeason {
+  display: flex;
+}
+
+/* Styles for each new season item */
+.nsItem {
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Styles for new season images */
+.nsImg {
+  width: 100%;
+  height: 500px;
+}
+
+/* General styles for headings */
+h1 {
+  color: #111;
+}
+
+/* Styles for background labels */
+.bg {
+  display: inline-block;
+  color: #fff;
+  background: cornflowerblue;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.7em;
+}
+
+/* Styles for button container */
+.buttonn {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
+}
+
+/* General styles for buttons */
+.buttonn a {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  font-size: 11px;
+  color: #111;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+  font-weight: bold;
+}
+
+/* Styles for button hover effect */
+.buttonn a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 0%;
+  background: #111;
+  height: 100%;
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+  transform: skew(-25deg);
+  transform-origin: right;
+}
+
+/* Hover effect to expand background and change text color */
+.buttonn a:hover:after {
+  width: 150%;
+  left: -10px;
+  transform-origin: left;
+}
+
+/* Hover effect for text color transition */
+.buttonn a:hover {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+/* Specific style for the first button */
+.buttonn a:nth-of-type(1) {
+  border-radius: 50px 0 0 50px;
+  border-right: none;
+}
+
+/* Specific style for the second button */
+.buttonn a:nth-of-type(2) {
+  border-radius: 0px 50px 50px 0;
+}
+
+/* Styles for cart icon */
+.cart-icon {
+  padding-right: 8px;
+}
+
+/* Positioning for cart footer */
+.cartfooter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/**********************STYLE FOR PRODUCT PAGE ENDS**********************/
+
+/**********************STYLE FOR FEEDBACK PAGE**********************/
+/* Form container */
+.form {
+  height: auto;
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  margin-top: 25px;
+  background-color: #8e8558d1;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #3b6d50, #000000);
+}
+
+/* Button styling */
+.btn {
+  background-color: #007d19;
+  text-align: center;
+  width: 100px;
+  height: 37px;
+  font-family: poppins;
+  font-size: 19px;
+  display: block;
+  margin: auto;
+  border: none;
+  margin-top: 25px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: white;
+  color: #a38154;
+}
+
+/**********************STYLE FOR FEEDBACK PAGE ENDS**********************/
+
+/**********************STYLE FOR BLOG PAGE**********************/
+
+.Introduction,
+.Conclusion {
+  width: 70%;
+  height: auto;
+  border: 2px solid black;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  background-color: #fcfdb3;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+.outerContainer {
+  width: 100%;
+  height: 310px;
+  border: 3px solid #654522;
+  display: flex;
+  background-color: wheat;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.innerContainer {
+  width: 50%;
+  height: auto;
+  border: 2px solid #76582b;
+  margin: 10px;
+  background-color: #fcfdb3;
+  border-radius: 25px;
+}
+
+.heading {
+  text-align: center;
+  margin: 28px 0px 10px 0px;
+}
+
+.bodyImg {
+  width: 100%;
+  height: 250px;
+  border-radius: 25px;
+}
+/**********************STYLE FOR BLOG PAGE ENDS**********************/

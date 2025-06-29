@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Products">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="../cssFile/style.css">
+    <!-- Title of the webpage -->
+    <title>Our Products</title>
+
+    <!--Internal CSS-->
+
+    <style>
+        .printerTitle {
+            font-size: 75px;
+            font-weight: 900;
+        }
+
+        .printerDesc {
+            font-size: 18px;
+            color: #111;
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navigation bar starts-->
+    <nav id="nav">
+        <!--The upper part of the navigation bar includes logo, search bar and limited offer title.-->
+        <div class="navTop">
+            <!--Division for logo-->
+            <div class="navItem">
+                <img src="../Images/l1.png" alt="" class="logo">
+            </div>
+
+            <!--Division for search bar-->
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="../Images/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+
+            <!--Division for limited offer title-->
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
+        </div>
+
+        <!--The bottom part contains the menu items where user can navigate to other pages of website-->
+        <div class="navBottom">
+            <h3 class="menuItem"><a href="index.html" class="navLink">HOME</a></h3>
+            <h3 class="menuItem"><a href="product.html" class="navLink">PRODUCTS</a></h3>
+            <h3 class="menuItem"><a href="Research.html" class="navLink">RESEARCH</a></h3>
+            <h3 class="menuItem"><a href="aboutUs.html" class="navLink">ABOUT US</a></h3>
+            <h3 class="menuItem"><a href="blog.html" class="navLink">BLOG</a></h3>
+        </div>
+    </nav>
+    <!--Navigatin Bar Ends -->
+
+
+    <!-- Main container for the product section -->
+    <div class="productMainSection" id="product">
+
+        <!-- Product image -->
+        <img src="../Images/h.png" alt="" class="productImg">
+
+        <!-- Container for the product details -->
+        <div class="productDetails">
+
+            <!-- Product title -->
+            <h1 class="printerTitle">Brother Ink Tank</h1>
+
+            <!-- Product price -->
+            <h2 class="printerPrice">Rs. 55,000</h2>
+
+            <!-- Product description -->
+            <p class="printerDesc">
+                The Brother Ink Tank Printer combines high-quality printing with cost-effective ink
+                tank technology, offering efficient and reliable performance for both home and office printing needs.
+            </p>
+
+            <!-- Section for product color options -->
+            <div class="colors">
+                <!-- Individual color option-->
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+
+            <!-- Section for product size options -->
+            <div class="sizes">
+                <!-- Individual size option -->
+                <div class="size">Color</div>
+                <div class="size">B/W</div>
+                <div class="size">Hybrid</div>
+            </div>
+
+            <!-- Button to purchase the product -->
+            <button class="productButton">BUY NOW!</button>
+        </div>
+    </div>
+
+
+    <!-- Outer container for the features section -->
+    <div class="featuresOuterBox">
+
+        <!-- Feature 1: Free Shipping -->
+        <div class="feature">
+            <!-- Icon for free shipping -->
+            <img src="../Images/shipping.png" alt="Shipping Icon" class="featureIcon">
+            <!-- Title for free shipping -->
+            <span class="featureTitle">FREE SHIPPING</span>
+            <!-- Description for free shipping -->
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+
+        <!-- Feature 2: 30 Days Return -->
+        <div class="feature">
+            <!-- Icon for return policy -->
+            <img class="featureIcon" src="../Images/return.png" alt="Return Icon">
+            <!-- Title for return policy -->
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <!-- Description for return policy -->
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+
+        <!-- Feature 3: Gift Cards -->
+        <div class="feature">
+            <!-- Icon for gift cards -->
+            <img class="featureIcon" src="../Images/gift.png" alt="Gift Icon">
+            <!-- Title for gift cards -->
+            <span class="featureTitle">GIFT CARDS</span>
+            <!-- Description for gift cards -->
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+
+        <!-- Feature 4: Contact Us -->
+        <div class="feature">
+            <!-- Icon for contact -->
+            <img class="featureIcon" src="../Images/contact.png" alt="Contact Icon">
+            <!-- Title for contact -->
+            <span class="featureTitle">CONTACT US!</span>
+            <!-- Description for contact -->
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+    <!--Features section ends here-->
+
+
+    <!-- Main wrapper for the exclusive section -->
+    <div class="wrapper exclusive-section" id="psection">
+        <!-- Nested wrapper for product listings -->
+        <div class="wrapper">
+            <!-- Outer container for each product -->
+            <div class="outer">
+                <!-- Content section with animations -->
+                <div class="content animated fadeInLeft">
+                    <!-- Background label -->
+                    <span class="bg animated fadeInDown">OVERALL</span>
+                    <!-- Product title -->
+                    <h1>Canon </br>LBP6030</h1>
+                    <!-- Product description -->
+                    <p>If you work from home but <br> need all the advantages of an <br>office printer, the OfficeJet
+                        Pro is best.</p>
+                    <!-- Price and Add to Cart button -->
+                    <div class="buttonn">
+                        <a href="#">Rs. 15,500</a>
+                        <a class="cart-btn" href="#"><i class="cart-icon ion-bag"></i>ADD TO CART</a>
+                    </div>
+                </div>
+                <!-- Product image with animation -->
+                <img src="../Images/lbp6030b-b2.png" width="250px" class="animated fadeInRight">
+            </div>
+
+            <!-- Repeat the same structure for other products -->
+            <div class="outer">
+                <div class="content animated fadeInLeft">
+                    <span class="bg animated fadeInDown">SMALL OFFICE</span>
+                    <h1>HP OfficeJet </br>Pro 9015e</h1>
+                    <p>It prints fast, though the <br>scanning is a little slow. <br>The graphic, <br>text and webpage
+                        text
+                        were all excellent.</p>
+                    <div class="buttonn">
+                        <a href="#">Rs. 45,000</a>
+                        <a class="cart-btn" href="#"><i class="cart-icon ion-bag"></i>ADD TO CART</a>
+                    </div>
+                </div>
+                <img src="../Images/c06761004.png" width="250px" class="animated fadeInRight">
+            </div>
+
+            <div class="outer">
+                <div class="content animated fadeInLeft">
+                    <span class="bg animated fadeInDown">BUDGET</span>
+                    <h1>Brother<br />J1010DW</h1>
+                    <p> Photos came out clear and <br>sharp as did the graphics on <br>the website and brochure test.
+                    </p>
+                    <div class="buttonn">
+                        <a href="#">Rs. 30,000</a>
+                        <a class="cart-btn" href="#"><i class="cart-icon ion-bag"></i>ADD TO CART</a>
+                    </div>
+                </div>
+                <img src="../Images/ApHandler-removebg-preview.png" width="300px" class="animated fadeInRight">
+            </div>
+        </div>
+    </div>
+
+    <!-- Include JavaScript file for Add to Cart functionality -->
+    <script src="../js/atc.js"></script>
+
+    <!-- Second wrapper for additional product listings -->
+    <div class="wrapper exclusive-section">
+        <div class="wrapper">
+            <div class="outer">
+                <div class="content animated fadeInLeft">
+                    <span class="bg animated fadeInDown">PHOTO</span>
+                    <h1> Pixma<br /> TR4720</h1>
+                    <p>Pixma scored better in color <br> reproduction, more expensive <br>all-in-one printers.</p>
+                    <div class="buttonn">
+                        <a href="#">Rs. 20,000</a>
+                        <a class="cart-btn addToCartBtn" href="#">ADD TO CART</a>
+                    </div>
+                </div>
+                <img src="../Images/404503-all-in-one-inkjet-printers-canon-pixma-tr4720-10024376.png" width="275px"
+                    class="animated fadeInRight">
+            </div>
+
+            <div class="outer">
+                <div class="content animated fadeInLeft">
+                    <span class="bg animated fadeInDown">THERMAL</span>
+                    <h1>Nelko<br /> Bluetooth <br>Thermal</h1>
+                    <p>Compact Size and Easy to Set up,<br> No ink No toner, Auto Detection, Auto Paper Return and
+                        Intelligent Self-Test.</p>
+                    <div class="buttonn">
+                        <a href="#">Rs. 15,000</a>
+                        <a class="cart-btn addToCartBtn" href="#">ADD TO CART</a>
+                    </div>
+                </div>
+                <img src="../Images/image-removebg-preview.png" width="275px" class="animated fadeInRight">
+            </div>
+
+            <div class="outer">
+                <div class="content animated fadeInLeft">
+                    <span class="bg animated fadeInDown">TEXT</span>
+                    <h1>Epson<br /> Expression <br> 4100</h1>
+                    <p>Excellent at text reproduction <br> and about average on the image quality.</p>
+                    <div class="buttonn">
+                        <a href="#">Rs. 25,000</a>
+                        <a class="cart-btn addToCartBtn" href="#">ADD TO CART</a>
+                    </div>
+                </div>
+                <img src="../Images/399648-all-in-one-inkjet-printers-epson-expression-home-xp-4100-10008440.png"
+                    width="275px" class="animated fadeInRight">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- Left section of the footer with multiple menus -->
+        <div class="footerLeft">
+            <!-- Menu for About Us section -->
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <!-- Menu for Useful Links section -->
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <!-- Menu for Products section -->
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Home</li>
+                    <li class="fListItem">Products</li>
+                    <li class="fListItem">Research</li>
+                    <li class="fListItem">Blog</li>
+                    <li class="fListItem">Sale</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Right section of the footer -->
+        <div class="footerRight">
+            <!-- Newsletter subscription section -->
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <!-- Social media follow section -->
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="../Images/facebook.png" alt="Facebook" class="fIcon">
+                    <img src="../Images/twitter.png" alt="Twitter" class="fIcon">
+                    <img src="../Images/instagram.png" alt="Instagram" class="fIcon">
+                    <img src="../Images/whatsapp.png" alt="WhatsApp" class="fIcon">
+                </div>
+            </div>
+            <!-- Link to feedback form -->
+            <a href="feedback.html" class="fButtonfeedback">Feedback Form!</a>
+            <!-- Copyright section -->
+            <div class="footerRightMenu">
+                <span class="copyright">@Print. All rights reserved. 2022.</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

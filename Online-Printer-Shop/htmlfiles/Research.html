@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Printer-shop" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+
+    <title>Research Page</title>
+    <link rel="stylesheet" href="../cssFile/style.css" />
+
+    <!--Internal Css-->
+    <style>
+      .ImageBoxes {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px 10px;
+      }
+
+      .researchImage {
+        width: 40%;
+        height: auto;
+        border: 2px solid gray;
+      }
+
+      .websiteImage {
+        width: 40%;
+        height: auto;
+        border: 2px solid lightgrey;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .explanation {
+        width: 80%;
+        display: block;
+        margin: auto;
+        height: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navigation bar starts-->
+    <nav id="nav">
+      <!--The upper part of the navigation bar includes logo, search bar and limited offer title.-->
+      <div class="navTop">
+        <!--Division for logo-->
+        <div class="navItem">
+          <img src="../Images/l1.png" alt="" class="logo" />
+        </div>
+
+        <!--Division for search bar-->
+        <div class="navItem">
+          <div class="search">
+            <input type="text" placeholder="Search..." class="searchInput" />
+            <img
+              src="../Images/search.png"
+              width="20"
+              height="20"
+              alt=""
+              class="searchIcon"
+            />
+          </div>
+        </div>
+
+        <!--Division for limited offer title-->
+        <div class="navItem">
+          <span class="limitedOffer">Limited Offer!</span>
+        </div>
+      </div>
+
+      <!--The bottom part contains the menu items where user can navigate to other pages of website-->
+      <div class="navBottom">
+        <h3 class="menuItem"><a href="index.html" class="navLink">HOME</a></h3>
+        <h3 class="menuItem">
+          <a href="product.html" class="navLink">PRODUCTS</a>
+        </h3>
+        <h3 class="menuItem">
+          <a href="Research.html" class="navLink">RESEARCH</a>
+        </h3>
+        <h3 class="menuItem">
+          <a href="aboutUs.html" class="navLink">ABOUT US</a>
+        </h3>
+        <h3 class="menuItem"><a href="blog.html" class="navLink">BLOG</a></h3>
+      </div>
+    </nav>
+    <!--Navigatin Bar Ends -->
+    <!-- The div with class ImageBoxes contains two box inside it.
+    In one box there is screenshot of the page researched and in another the page built through it's idea. -->
+
+    <div class="ImageBoxes">
+      <div class="researchImage">
+        <a href="https://krunch.webflow.io/#contact" target="_blank"
+          ><img src="../Images/feedbackResearch.png" alt=""
+        /></a>
+      </div>
+
+      <div class="websiteImage">
+        <img src="../Images/feedback.png" alt="" />
+      </div>
+    </div>
+
+    <!-- div for explanation starts here -->
+    <div class="explanation">
+      <p>
+        The idea for our feedback form was taken from the website and the
+        screenshot of the website we have researched is provided.We took the
+        idea of the layout of the form. However, we have added some fields in
+        our form and styling as well.
+      </p>
+    </div>
+    <!-- div for explanation ends here -->
+
+    <div class="ImageBoxes">
+      <div class="researchImage">
+        <a
+          href=" https://www.youtube.com/watch?v=yQimoqo0-7g&t=1508s"
+          target="_blank"
+          ><img src="../Images/homeResearch.png" alt=""
+        /></a>
+      </div>
+
+      <div class="websiteImage">
+        <img src="../Images/Printer-Shop.png" alt="" />
+      </div>
+    </div>
+
+    <div class="explanation">
+      <p>
+        The idea for our home page was taken from the website mentioned above.
+        From this website we took the idea of the layout and css style to make
+        my home page look visually appealing and also to give an attractive
+        layout.
+      </p>
+    </div>
+
+    <div class="ImageBoxes">
+      <div class="researchImage">
+        <a
+          href="https://www.youtube.com/watch?v=9mBrEVH4qV4&t=592s"
+          target="_blank"
+          ><img src="../Images/portfolio.png" alt=""
+        /></a>
+      </div>
+
+      <div class="websiteImage">
+        <img src="../Images/portfolioPage.png" alt="" />
+      </div>
+    </div>
+
+    <div class="explanation">
+      <p>
+        The idea of our portfolio was taken from the website and screenshot of
+        researched material is placed above. From the website we took the idea
+        of the layout of the portfolio to make our portfolio look attractive.
+      </p>
+    </div>
+
+    <footer>
+      <!-- Left section of the footer with multiple menus -->
+      <div class="footerLeft">
+        <!-- Menu for About Us section -->
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">About Us</h1>
+          <ul class="fList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <!-- Menu for Useful Links section -->
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Useful Links</h1>
+          <ul class="fList">
+            <li class="fListItem">Support</li>
+            <li class="fListItem">Refund</li>
+            <li class="fListItem">FAQ</li>
+            <li class="fListItem">Feedback</li>
+            <li class="fListItem">Stories</li>
+          </ul>
+        </div>
+        <!-- Menu for Products section -->
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Products</h1>
+          <ul class="fList">
+            <li class="fListItem">Home</li>
+            <li class="fListItem">Products</li>
+            <li class="fListItem">Research</li>
+            <li class="fListItem">Blog</li>
+            <li class="fListItem">Sale</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right section of the footer -->
+      <div class="footerRight">
+        <!-- Newsletter subscription section -->
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+          <div class="fMail">
+            <input type="text" placeholder="your@email.com" class="fInput" />
+            <button class="fButton">Join!</button>
+          </div>
+        </div>
+        <!-- Social media follow section -->
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Follow Us</h1>
+          <div class="fIcons">
+            <img src="../Images/facebook.png" alt="Facebook" class="fIcon" />
+            <img src="../Images/twitter.png" alt="Twitter" class="fIcon" />
+            <img src="../Images/instagram.png" alt="Instagram" class="fIcon" />
+            <img src="../Images/whatsapp.png" alt="WhatsApp" class="fIcon" />
+          </div>
+        </div>
+        <!-- Link to feedback form -->
+        <a href="feedback.html" class="fButtonfeedback">Feedback Form!</a>
+        <!-- Copyright section -->
+        <div class="footerRightMenu">
+          <span class="copyright">@Print. All rights reserved. 2022.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
